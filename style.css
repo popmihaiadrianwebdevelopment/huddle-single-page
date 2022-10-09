@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+/* font-family: 'Poppins', sans-serif; */
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center/cover;
+    background-color: var(--violet);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+header {
+    padding-top: 70px;
+    margin-bottom: 100px;
+}
+
+.hero {
+    max-width: 100%;
+    
+}
+
+.container {
+    max-width:100%;
+    width:1300px;
+    padding: 0 1.25rem;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    max-width: 100%;
+    width:700px;
+}
+
+.containerText {
+    margin-left: 4rem;
+}
+
+.btn {
+    padding: 20px 50px;
+    border: none;
+    border-radius: 50px;
+    color: var(--violet);
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: var(--soft-magenta) ;
+}
+.social {
+    margin-top: 3rem;
+}
+
+.social.flex {
+    display: flex;
+    justify-content: right;
+    margin-right: 5rem;
+}
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-left: 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    transition:.3s all;
+}
+
+ul a:hover {
+    color: var(--soft-magenta);
+    border: 1px solid var(--soft-magenta);
+}
+
+@media screen and (max-width:900px) {
+    .body {
+        text-align: center;
+    }
+    img {
+        max-width: 100%;
+        padding: 2rem;
+    }
+
+    header {
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+    .container {
+        padding: 2rem;
+    }
+
+    .containerText {
+        margin: 0;
+        text-align: center;
+    }
+    .social.flex {
+        align-items: center;
+        justify-content: center;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+    }
+
+    footer .flex {
+        flex-direction: row;
+        text-align: center;
+    }
+
+
+}
